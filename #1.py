@@ -312,9 +312,9 @@ def consonants():
     with open('My School','r') as f:
         r = f.read()
         c = 0
-        for i in rL
-        if i not in 'AEIOUaeiou':
-            c += 1
+        for i in r:
+            if i not in 'AEIOUaeiou' and i.isalpha():
+                c += 1
         print('No of consonants: ',c)
 
 def A():
